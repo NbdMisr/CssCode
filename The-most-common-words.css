@@ -1,0 +1,65 @@
+@charset "UTF-8";.mainKeywords {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: none;
+    padding: 20px 16px;
+    border: 1px solid #e8e8e8;
+}
+
+.mainKeywords .title {
+    display: inline-block;
+    float: right;
+    width: 164px;
+    margin-left: 20px;
+    height: 35px
+}
+
+.mainKeywords img {
+    display: inline-block;
+    float: right;
+    width: 26px;
+    height: auto;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.mainKeywords p {
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 35px;
+}
+
+.mainKeywords .keywords {
+    float: right;
+    display: inline-block;
+    width: calc(100% - 184px);
+    height: 35px;
+    overflow: hidden
+}
+
+
+.mainKeywords .keywords a:last-child {
+    margin-left: 0
+}
+
+.mainKeywords .keywords a:hover {
+    background: #9e0202;
+    color: #fff
+}
+    .mainKeywords .keywords a {
+        font-size: 13px;
+        padding: 5px 12px
+    }
+
+.mainKeywords .keywords a {
+    float: right;
+    padding: 5px 20px;
+    color: #1d1d1d;
+    font-size: 13px;
+    background: #f2f2f2;
+    margin-left: 10px;
+    display: inline-block;
+}
