@@ -1,0 +1,29 @@
+/* الإعدادات والتخصيص */
+.preloader{
+--box-sizing: 70px /*حجم الصورة*/;
+--circle-color: #fff /* لون خلفية الدائرة */;
+--circle-color-rotating: var(--Hok) /* لون خلفية العجلة */;
+--blur-bg-effect: 3px /* درجة تعتيم الخلفية (الضبابية) */;
+--hide-timing: 0.8s /*مدة التلاشي*/
+}
+/* تأثير الإختفاء */
+@keyframes fadeOut-yacine{to{opacity:0}}
+.fade-hide-effect{pointer-events:none;animation: fadeOut-yacine var(--hide-timing) forwards 1;}
+/* شكل التحميل */
+.loader{
+width: var(--box-sizing);
+height: var(--box-sizing);
+border: 5px solid var(--circle-color);
+border-bottom-color: var(--circle-color-rotating);
+border-radius: 50%;
+display: inline-block;
+box-sizing: border-box;
+position: absolute;
+animation: rotation 1s linear infinite;
+}
+/* other */
+.preloader .nbdmisrlogo img {border-radius: 100%;padding: 8px;}
+@keyframes rotation {0%{transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+.preloader .nbdmisrlogo{position:relative;width:var(--box-sizing);height:var(--box-sizing);}
+.preloader{position:fixed;width:100%;height:100vh;background:rgba(27,90,132,.1);-webkit-backdrop-filter:blur(var(--blur-bg-effect));backdrop-filter:blur(var(--blur-bg-effect));display:flex;left:0;top:0;flex-direction:column;align-items:center;justify-content:center;transition:opacity .2s;z-index:9999999999999}.preloader.hide{opacity:0;pointer-events:none}
+/* الإعدادات والتخصيص نهاية */
